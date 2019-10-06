@@ -49,7 +49,6 @@ func HandleDnspod(w http.ResponseWriter, req *http.Request) {
 	if ip == "" {
 		ip = ClientIP(req)
 	}
-	w.Write([]byte(ip))
 	// Set Params
 	v := url.Values{}
     v.Set("login_token", id + "," + token)
