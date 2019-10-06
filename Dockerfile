@@ -10,4 +10,4 @@ LABEL maintainer="Max Sum <max@lolyculture.com>"
 WORKDIR /app
 COPY --from=build-env /src/http /app/
 EXPOSE 80
-ENTRYPOINT ./goapp
+ENTRYPOINT ./http
